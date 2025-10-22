@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helping connect volunteers and neighbors through the Community Helper App.">
+    <meta name="keywords" content="community, volunteering, helper app, local support, service">
+    <meta name="author" content="Harshal">
+    <meta property="og:title" content="Community Helper App">
+    <meta property="og:description"
+        content="Join our community and make a difference! Learn more about local daily tasks opportunities.">
+    <meta property="og:image" content="https://yourdomain.com/images/community-helper-preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Community Helper App">
+    <meta name="twitter:description" content="A simple way to connect with community service opportunities.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/community-helper-preview.jpg">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIGER PLANNER</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="PLAN YOUR STOP NAV BAR.png" alt="nav-bar-pic">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#plan">PLANNER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+
+        <div class="menu-icon">
+            <i class="fas fa-bars" id="menu-toggle"></i>
+        </div>
+
+    </nav>
+
+
+    <section class="landing-page" id="Home">
+        <h1>! WELCOME BACK USER !</h1>
+
+        <div class="inform-pic">
+            <div class="wrap">
+                <h2>HERE ARE SOME UPDATES</h2>
+                <li>
+                    ADDED PLANNER 1.0!
+                </li>
+                <li>ADDED A CONTACT</li>
+                <li> ADDED A BUTTON ON THE BOTTOM LEFT FOR ABOUT US</li>
+                <a href="#plan" id="plan" class="get">GET STARTED</a>
+            </div>
+
+
+            <div class="tiger">
+                <img src="Untitled design (35).png" alt="">
+            </div>
+
+
+        </div>
+
+        <a class="help-button" id="#about">?</a>
+
+
+    </section>
+
+
+    <section class="planner" id="plan">
+        <h1>My Planner</h1>
+        <div class="calendar-container">
+            <input type="date" id="datePicker" />
+            <input type="time" id="timePicker" />
+            <input type="text" id="eventInput" placeholder="Add reminder or event..." />
+            <button onclick="addReminder()">Add</button>
+        </div>
+        <ul id="reminderList"></ul>
+    </section>
+
+
+    <section class="about" id="#about">
+        <h1>ABOUT US !!!!</h1>
+        <div class="container">
+            <p>🐯 Why Tiger Planner Is Awesome
+                Pushes You to Move: No boring alerts — it shouts “Do it already!” when it’s go time.
+                Cuts the Overthinking: Stuck? It jumps in and says “Just start!”
+                Full of Attitude: It’s not a planner, it’s your loud, no-nonsense buddy.
+                Builds Good Habits: Keeps poking you till stuff gets done — like a tiger with a to-do list.
+            </p>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

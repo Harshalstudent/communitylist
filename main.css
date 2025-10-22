@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    padding-top: 6rem;
+
+
+
+    .logo {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            margin: 2rem;
+            width: 150px;
+            border-radius: 55px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ff99d8;
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 3.5rem;
+        background-color: #fad6a5;
+        border-radius: 35px;
+        /* background-color: ; */
+
+    }
+
+    a:hover {
+        color: #Ff751f;
+        background-color: white;
+        transition: 0.5s ease-in-out;
+    }
+
+    .menu-icon {
+        display: none;
+
+    }
+
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+
+    h1 {
+        color: #ffde59;
+        font-size: 4rem;
+        position: absolute;
+        top: 15rem;
+
+
+
+    }
+
+    .inform-pic {
+        display: flex;
+        gap: 20rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        .wrap {
+            background-color: #2a262a;
+            color: #ff99d8;
+            padding: 50px;
+            border-radius: 25px;
+
+            width: 750px;
+
+
+
+
+        }
+
+        .get {
+            text-decoration: none;
+            line-height: 10rem;
+            padding: 25px;
+            background-color: white;
+            border-radius: 35px;
+            font-size: 3rem;
+            color: black;
+        }
+
+
+        .get:hover {
+            transition: 0.5s ease-in-out;
+            color: #fad6a5;
+            background-color: #ff99d8;
+            font-size: 4rem;
+            padding: 30px;
+
+        }
+
+        .wrap h2 {
+
+            font-size: 3rem;
+        }
+
+        .wrap li {
+
+            font-size: 3rem;
+        }
+
+        /* Get Started Button */
+
+
+        /* Tiger Image */
+        .tiger img {
+            width: 550px;
+
+
+        }
+
+    }
+
+
+
+
+    /* Help Button */
+    .help-button {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: #ff99d8;
+        color: #ffde59;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .help-button:hover {
+        color: white;
+        background-color: #Ff751f;
+        transition: all ease-in-out 0.5s;
+        width: 170px;
+        height: 170px;
+        font-size: 8rem;
+    }
+
+}
+
+
+.planner {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ff99d8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.planner h1 {
+    text-align: center;
+    color: #333;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.calendar-container input,
+.calendar-container button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.calendar-container button {
+    background-color: #Ff751f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar-container button:hover {
+    background-color: #fad6a5;
+    transition: 0.5s ease-in-out;
+}
+
+#reminderList {
+    list-style: none;
+    padding: 0;
+}
+
+#reminderList li {
+    background: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    flex-direction: column;
+
+    h1 {
+        color: white;
+        font-size: 6rem;
+    }
+
+
+    .container {
+        p {
+            width: 1000px;
+            background-color: #ff99d8;
+            padding: 25px;
+            font-size: 3rem;
+            border-radius: 25px;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    nav {
+        display: flex;
+        position: sticky;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+
+        .logo {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            img {
+                margin: 2rem;
+                width: 150px;
+                border-radius: 55px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 4.5rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+
+            flex-direction: column;
+            justify-content: center;
+
+
+            align-items: center;
+
+            transform: translateX(100%);
+            transition: all 0.5 ease;
+
+            a {
+                text-decoration: none;
+                color: #ff99d8;
+                text-transform: uppercase;
+                padding: 15px;
+                font-size: 3.5rem;
+                background-color: #fad6a5;
+                border-radius: 35px;
+
+                /* background-color: ; */
+
+            }
+        }
+
+        ul.open {
+            transform: translateX(0);
+            transition: all 0.5s ease;
+            background-color: rgb(255, 255, 255);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .menu-icon {
+            display: flex;
+            z-index: 5;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #ff99d8;
+            position: absolute;
+            right: 3rem;
+            top: 4rem;
+        }
+
+        a:hover {
+            color: #Ff751f;
+            background-color: white;
+            transition: 0.5s ease-in-out;
+        }
+
+        #menu-toggle {
+            display: flex;
+        }
+
+
+    }
+}
